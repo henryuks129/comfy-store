@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  }
+:root{
+    --primary-colour: #FFFFFF;
+    --secondary-color-1: #394F6A;
+    --secondary-color-2: #F0F6FF;
+    --secondary-color-3: #463AA2;
+    --secondary-color-4: #031431;
+    --secondary-color-5: #067AFF;
+    --links-color: #C6C9D2;
+    
+    --font-size-1: 60px;
+    --font-size-2: 30px;
+    --font-size-3: 23px;
+    --font-size-4: 18px;
+    --font-size-5: 14px;
+
+   
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+    background-color: var(--secondary-color-4);
+    height: 35px;
+    display: flex;
+}
+
+.login-wrapper {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.login-wrapper a {
+    text-decoration: none;
+    color: var(--links-color);
+    font-size: var(--font-size-5);
+}
+
+.login-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    padding-right: 19px;
+}
+
+/* NAVBAR */
+.header {
+    display: flex;
+    background-color: var(--secondary-color-2);
+    height: 70px;
+}
+
+.navbar{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comfy-rep {
+    background-color: var(--secondary-color-5);
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: var(--links-color);
+    font-size: var(--font-size-2);
+    font-weight: bolder;
+}
+
+.comfy-rep:hover{
+    background-color: #0068E0;
+    cursor: pointer;
+}
+
+.navbar-links ul {
+    display: flex;
+    font-size: var(--font-size-5);
+}
+
+.navbar-links ul a{
+    text-decoration: none;
+    color: var(--secondary-color-1);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar-links ul .home {
+    color: #fff;
+    background-color: var(--secondary-color-4);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar-links ul a:hover{
+    background-color: #DCE5EF;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.navbar-links ul  {
+    list-style: none;
+}
+
+.navbar-icons  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* color: var(--secondary-color-1); */
+}
+
+
+.bi-cart3:hover {
+    border-radius: 50%;
+    background-color: var(--links-color);
+    padding: 10px;
+}
+
+.fa-moon {
+    border-radius: 50%;
+    padding: 12px;
+    color: var(--secondary-color-1);
+}
+
+.bi-cart3 {
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--secondary-color-1);
+    font-size: var(--font-size-3);
+}
+
+/* CHANGING THE WAY PEOPLE SHOP SECTION */
+.change-wrapper {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    gap: 150px;
+}
+
+.change-subtitle p {
+    font-size: var(--font-size-1);
+    font-weight: bolder;
+    color: var(--secondary-color-1);
+}
+
+.change-text {
+    color: var(--secondary-color-1);
+    font-size: var(--font-size-4);
+    margin-top: 20px;
+}
+
+.change-text p {
+  line-height: 30px;
+}
+
+.change-btn {
+    margin-top: 20px;
+}
+
+.change-btn button{
+    text-transform: capitalize;
+    background-color: var(--secondary-color-5);
+    padding: 15px 15px;
+    border-radius: 8px;
+    color: var(--links-color);
+    font-size: var(--font-size-5);
+    font-weight: bolder;
+    border: none;
+}
+
+.change-btn button:hover {
+    background-color: #0068E0;
+    cursor: pointer;
+}
+
+.change-left {
+    padding-top: 40px;
+    width: 65%;
+}
+
+.change-right {
+    background-color: #031431;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    width: 65%; /* Shrink to 45% width */
+    height: 50vh; /* Set the height to allow full vertical view */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    white-space: nowrap; /*Prevents content from wrapping, forcing horizontal scroll*/
+}
+
+.mySwiper {
+    transform: none;
+    display: flex;
+    width: auto; /* Allow the Swiper to take up as much width as needed */
+}
+
+swiper-slide {
+    display: inline-block; /* Ensure slides are displayed inline to enable horizontal scrolling */
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 8px;
+    margin: 10px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+
+/* FEATURED PRODUCTS */
+.f-products {
+    width: 65%;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.f-products p {
+    font-size: var(--font-size-2);
+    color: var(--secondary-color-1);
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 2px;
+}
+
+/* HOMEPAGE CARD */
+.homepage-wrapper {
+    width: 65%;
+    margin: auto;
+    /* padding-top: 20px; */
+    height: 40vh;
+    /* width: 100%; */
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 8px; */
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: repeat(3, 380px); */
+    /* gap: 10px; */
+    /* padding-top: 20px; */
+}
+
+.img-text p {
+    font-size: 20px;
+    color: var(--secondary-color-1);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.img-price {
+    color:#463BA2;
+}
