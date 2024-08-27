@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfy-store</title>
+  <link rel="icon" href="https://react-vite-comfy-store-v2.netlify.app/vite.svg" type="image/png" sizes="32x32">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+   
+    
+    section form {
+      max-width: 300px;
+      padding: 2px 5px;
+      margin: 50px auto;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 3px 4px grey;
+      padding: 2rem;
+      box-sizing: content-box;
+     
+    
+    }
+    
+    .form__title {
+      text-align: center;
+      letter-spacing: 3px;    
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .text-field input {
+      display: block;
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 1rem;
+      border:1px solid #ccc;
+      width: 100%;
+      
+    }
+
+    input{
+      margin-bottom: 30px ;
+    }
+    
+    .text-field input:focus {
+      outline: none;
+    }
+    
+    .btn{
+      justify-content: center;
+      display: flex;
+      margin-bottom: 2rem;
+      
+    }
+    button{
+      width: 100%;
+      padding: 10px;
+      border:2px solid #ccc;
+      border-radius: .75rem;
+      background-color: rgb(27, 27, 209);
+    }
+    
+    .sign-in_page{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    
+
+    <form action="">
+      <div class="form__title"><b>Register</b></div>
+
+      <div class="text-field">
+        <label for="username">Username</label> 
+      <input name="username" type="text">
+      </div>
+
+      <div class="text-field">
+        <label for="Email">Email</label> 
+      <input name="email" type="email"> 
+      </div>
+
+      <div class="text-field">
+        <label for="password">Password</label> 
+        <input name="password" type="password"> 
+      </div>
+      
+      <div class="btn">
+        <button >Register</button>
+      </div>
+       
+
+       <div class="sign-in_page">
+        <span>Already a member? <a href="sign_in.html">Login</a> </span>
+       </div>
+    </form>
+
+    
+  </section>
+    
+  <script src="/register.js"></script>
+</body>
+</html>
