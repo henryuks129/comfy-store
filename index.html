@@ -14,7 +14,7 @@
 <body>
     <!-- TOP NAVBAR -->
     <div class="login-container">
-        <div class="login-wrapper">
+        <div class="respond login-wrapper">
             <a href="#" class="top-bar">Sign in / Guest</a>
             <a href="#">Create Account</a>
         </div>
@@ -22,22 +22,36 @@
 
     <!-- NAVBAR -->
     <section class="header">
-        <div class="navbar">
+        <div class="respond navbar">
             <div class="navbar-logo">
                 <span class="comfy-rep">C</span>
+                <span class="comfy-dropdown" id="comfyDropdown"><i class="fa-solid fa-bars"></i></span>
+                <div class="content" id="content">
+                    <ul>
+                        <li class="home"> <a href="#">Home</a> </li>
+                        <li class="homes"> <a href="#">About</a> </li>
+                        <li class="homes"> <a href="#" class="products">Products</a> </li>
+                        <li class="homes"> <a href="#" class="cart-link">Cart</a> </li>
+                    </ul>
+                </div>
+               
             </div>
 
             <div class="navbar-links">
                 <ul>
                     <li> <a href="#" class="home">Home</a> </li>
-                    <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Products</a> </li>
-                    <li> <a href="#">Cart</a> </li>
+                    <li class="abpdc"> <a href="#">About</a> </li>
+                    <li class="abpdc"> <a href="#">Products</a> </li>
+                    <li class="abpdc"> <a href="#">Cart</a> </li>
                 </ul>
             </div>
 
             <div class="navbar-icons">
-                    <a href="#"> <i class="fa-solid fa-moon"></i> </a>
+                    <a href="#" id="mode"> 
+                        <i class="fa-solid fa-moon"></i> 
+                        <i class="fa-solid fa-sun"></i>
+                    </a>
+                
                     <a href="#"> <i class="bi bi-cart3"></i> </a>
             </div>
         </div>
@@ -45,7 +59,7 @@
 
     <!-- CHANGING THE WAY PEOPLE SHOP SECTION -->
     <section class="change-container">
-        <div class="change-wrapper">
+        <div class="respond change-wrapper">
             <div class="change-left">
                 <div class="change-subtitle">
                     <p>We are changing the way people shop</p>
@@ -63,18 +77,30 @@
             </div>
 
             <div class="change-right">
-                <swiper-container class="mySwiper"  pagination="true" keyboard="true" mousewheel="true" direction="horizontal" space-between="30" slide-per-view="auto" loop="true">
-                <swiper-slide><img src="./imageFolder/hero1-deae5a1f.webp" alt="" width="350" height="450" style="border-radius: 8px; margin: 10px;"></swiper-slide>
-                <swiper-slide><img src="./imageFolder/hero2-2271e3ad.webp" alt="" width="350" height="450" style="border-radius: 8px; margin: 10px;"></swiper-slide>
-                <swiper-slide><img src="./imageFolder/hero3-a83f0357.webp" alt="" width="350" height="450" style="border-radius: 8px; margin: 10px;"></swiper-slide>
-                <swiper-slide><img src="./imageFolder/hero4-4b9de90e.webp" alt=""  width="350" height="450" style="border-radius: 8px; margin: 10px;"></swiper-slide>
-              </swiper-container>
-        </div>
+                <div class="mySwiper">
+                    <div class="slider">
+                      <img src="./imageFolder/hero1-deae5a1f.webp" alt="" class="furniture">
+                    </div>
+    
+                    <div class="slider">
+                      <img src="./imageFolder/hero2-2271e3ad.webp" alt=""  class="furniture">
+                    </div>
+    
+                
+                    <div class="slider">
+                      <img src="./imageFolder/hero3-a83f0357.webp" alt="" class="furniture">
+                    </div>
+    
+                    <div class="slider"> 
+                       <img src="./imageFolder/hero4-4b9de90e.webp" alt="" class="furniture">
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- FEATURED PRODUCTS -->
     <section class="featuredProducts">
-        <div class="f-products">
+        <div class="respond f-products">
             <p>Featured Products</p>
 
             <hr>
@@ -82,11 +108,11 @@
     </section>
 
     <!-- HOMEPAGE CARD -->
-    <section class="homepage-card_container">
-        <div class="homepage-wrapper">
+    <section class="homepage-card-container">
+        <div class="respond homepage-wrapper">
             <div class="card">
                 <div class="img">
-                    <img src="./imageFolder/pexels-photo-943150.webp" alt="" width="300" height="150">
+                    <img src="./imageFolder/pexels-photo-943150.webp" alt="" class="latern" width="320" height="190">
                 </div>
 
                 <div class="img-text">
@@ -99,11 +125,11 @@
 
             <div class="card">
                 <div class="img">
-                    <img src="./imageFolder/pexels-p" alt="" width="300" height="150">
+                    <img src="./imageFolder/pexels-photo-3679601.jpeg" alt="" class="latern" width="320" height="190">
                 </div>
 
                 <div class="img-text">
-                    <p>Avant-Garde Lamp</p>
+                    <p>Coffe Table</p>
 
                     <span class="img-price">$179.99</span>
                 </div>
@@ -112,17 +138,18 @@
 
             <div class="card">
                 <div class="img">
-                    <img src="./imageFolder/pexels-photo-943150.webp" alt="" width="300" height="150">
+                    <img src="./imageFolder/pexels-photo-1034584.jpeg" alt="" class="latern" width="320" height="190">
                 </div>
 
                 <div class="img-text">
-                    <p>Avant-Garde Lamp</p>
+                    <p>Comfy Bed</p>
 
-                    <span class="img-price">$179.99</span>
+                    <span class="img-price">$129.99</span>
                 </div>
             </div>
         </div>
     </section>
+    <script src="./feat-homepage.js" defer></script>
     <script src="app.js"></script>
 </body>
 </html>
